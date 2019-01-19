@@ -1,0 +1,17 @@
+{% extends 'default.html' %}
+
+{% block content %}
+<div class="container-fluid">
+	<h1>Save page</h1>
+    <form method="POST" action="/save">
+    	<div class="form-group">
+    		<label for="url">URL</label>
+    		<input id="url" name="url" class="form-control" type="text">
+    	</div>
+
+    	<div class="form-group">
+    		<button type="submit" class="btn btn-primary">Save</button>
+    	</div>
+    </form>
+</div>
+{% endblock %}
