@@ -26,6 +26,7 @@ routes = [
 	('/', 'index', handlers.pages.front_page, ['GET']),
 	('/home', 'home', handlers.pages.home_page, ['GET']),
 	('/save', 'save', handlers.forms.save_url, ['POST']),
+	('/url', 'url', handlers.pages.saved_url_page, ['GET']),
 ]
 
 for path, endpoint, handler, methods in routes:
